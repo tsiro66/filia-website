@@ -83,7 +83,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="min-h-screen flex items-center py-20  bg-gradient-to-bl from-teal-50 to-white">
+    <section id="services" className="min-h-screen flex items-center py-20  bg-gradient-to-l from-teal-50 to-white">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-light text-center text-gray-900 mb-16">
           Οι <span className="text-teal-600 font-normal">Υπηρεσίες</span> μας

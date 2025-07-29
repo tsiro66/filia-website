@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center bg-gradient-to-bl from-teal-50 to-white">
+    <section id="hero" className="min-h-screen flex items-center bg-gradient-to-l from-teal-50 to-white">
       <div className="container mx-auto py-20 px-6 md:p-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">

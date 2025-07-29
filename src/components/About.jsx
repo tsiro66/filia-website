@@ -1,7 +1,7 @@
 // About.jsx
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gradient-to-tl from-teal-50 to-white">
+    <section id="about" className="py-20 bg-gradient-to-l from-teal-50 to-white">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-light text-center text-gray-900 mb-16">
