@@ -91,9 +91,9 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div
+         <div
   key={index}
-  className="group relative bg-white p-8 border border-gray-200 overflow-hidden transition-colors duration-300 ease-in-out hover:bg-teal-600 h-80"
+  className="group relative bg-white p-8 border border-gray-200 overflow-hidden transition-colors duration-300 ease-in-out hover:bg-teal-600 h-60 md:h-80"
 >
   {/* Default Content */}
   <div className="transition-opacity duration-300 flex flex-col justify-center items-center text-center group-hover:opacity-0 h-full">
@@ -111,6 +111,7 @@ const Services = () => {
     <p className="transform transition-transform duration-500 translate-y-20 group-hover:translate-y-0">{service.hoverText}</p>
   </div>
 </div>
+
 
           ))}
         </div>

@@ -70,10 +70,11 @@ const Header = () => {
           ))}
 
           <button
-            className={`mt-8 sm:mt-10 bg-white text-teal-600 font-semibold px-6 sm:px-8 py-3 hover:bg-white/90 transition-colors ${isMenuOpen ? 'animate-fadeUp' : ''}`}
+            className={`relative overflow-hidden group mt-8 sm:mt-10 border border-white text-teal-600 sm:text-white bg-white sm:bg-transparent px-6 sm:px-8 py-3 font-semibold transition-colors duration-500 ${isMenuOpen ? 'animate-fadeUp' : ''}`}
             style={{ animationDelay: `${(navItems.length + 3) * 100}ms` }}
           >
-            Κλείστε Ραντεβού
+            <span className="relative z-10 transition-colors duration-300 group-hover:sm:text-teal-600">Κλείστε Ραντεβού</span>
+            <span className="absolute inset-0 w-full sm:w-0 bg-white transition-all duration-500 ease-out group-hover:sm:w-full"></span>
           </button>
 
           <div className={`mt-8 text-xs sm:text-sm text-white/80 ${isMenuOpen ? 'animate-fadeUp' : ''}`} style={{ animationDelay: `${(navItems.length + 4) * 100}ms` }}>

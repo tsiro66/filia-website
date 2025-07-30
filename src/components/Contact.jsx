@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-gradient-to-tl from-teal-50 to-white">
@@ -64,34 +66,35 @@ const Contact = () => {
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 Κλείστε Ραντεβού
               </h3>
-              <form className="space-y-4">
+              <div className="space-y-4">
                 <input
                   type="text"
                   placeholder="Το όνομά σας"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors"
                 />
                 <input
                   type="email"
                   placeholder="Το email σας"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors"
                 />
                 <input
                   type="tel"
                   placeholder="Το τηλέφωνό σας"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors"
                 />
                 <textarea
                   rows={4}
                   placeholder="Μήνυμα (προαιρετικό)"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 focus:border-teal-600 focus:outline-none transition-colors resize-none"
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full bg-teal-600 text-white py-3 rounded-lg hover:bg-teal-700 transition-colors"
+                  className="relative overflow-hidden group w-full border border-teal-600 text-teal-600 sm:text-teal-600 bg-teal-600 sm:bg-transparent py-3 font-medium transition-colors duration-500"
                 >
-                  Αίτηση Ραντεβού
+                  <span className="relative z-10 text-white sm:text-teal-600 transition-colors duration-300 group-hover:sm:text-white">Αίτηση Ραντεβού</span>
+                  <span className="absolute inset-0 w-full sm:w-0 bg-teal-600 transition-all duration-500 ease-out group-hover:sm:w-full"></span>
                 </button>
-              </form>
+              </div>
             </div>
           </div>
         </div>

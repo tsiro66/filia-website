@@ -1,4 +1,5 @@
-// About.jsx
+import React from 'react';
+
 const About = () => {
   return (
     <section id="about" className="py-20 bg-gradient-to-l from-teal-50 to-white">
@@ -12,20 +13,21 @@ const About = () => {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-            {/* Image Column */}
-            <div className="h-96 w-full rounded-xl shadow-2xl">
-              {/* ❗ Replace this src with a real photo of the doctor */}
-              <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop"
-                alt="Ιατρός Φίλια Δημητριάδη"
-                className="w-full h-full object-cover rounded-xl"
-              />
+            {/* Image Column - Updated to match Hero style */}
+            <div className="relative">
+              <div className="w-full h-96 bg-teal-100 overflow-hidden shadow-2xl">
+                <div className="w-full h-full bg-gradient-to-br from-teal-200 to-teal-300 flex items-center justify-center">
+                  <svg className="w-40 h-40 text-white/50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+              </div>
             </div>
 
             {/* Content Column */}
             <div className="flex flex-col justify-center">
               <p className="text-gray-700 mb-6 text-lg">
-                Η Ιατρός <strong>Φίλια Δημητριάδη</strong>, με πάνω από 20 χρόνια
+                Η Ιατρός <strong>Φιλία Δημητριάδη</strong>, με πάνω από 20 χρόνια
                 εμπειρίας, παρέχει εξατομικευμένη και ασθενοκεντρική
                 φροντίδα σε άτομα και οικογένειες της κοινότητάς μας.
               </p>

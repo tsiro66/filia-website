@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center bg-gradient-to-l from-teal-50 to-white">
+    <section id="hero" className="min-h-screen flex items-center bg-gradient-to-bl from-teal-50 to-white">
       <div className="container mx-auto py-20 px-6 md:p-20">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left">
@@ -13,9 +13,9 @@ const Hero = () => {
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 font-light">
               Εξειδικευμένη ιατρική φροντίδα για παιδιά και εφήβους με ενδοκρινολογικές διαταραχές, με επίκεντρο τη συμπόνια και την εμπιστοσύνη.
             </p>
-            <button className="relative overflow-hidden group border border-teal-600 text-teal-600 bg-white px-6 sm:px-8 py-3 sm:py-4 font-medium transition-colors duration-500">
-              <span className="relative z-10 transition-colors duration-300 group-hover:text-white">Κλείστε Ραντεβού</span>
-              <span className="absolute inset-0 w-0 bg-teal-600 transition-all duration-500 ease-out group-hover:w-full"></span>
+            <button className="relative overflow-hidden group border border-teal-600 text-white sm:text-teal-600 bg-teal-600 sm:bg-white px-6 sm:px-8 py-3 sm:py-4 font-medium transition-colors duration-500">
+              <span className="relative z-10 transition-colors duration-300 group-hover:sm:text-white">Κλείστε Ραντεβού</span>
+              <span className="absolute inset-0 w-full sm:w-0 bg-teal-600 transition-all duration-500 ease-out group-hover:sm:w-full"></span>
             </button>
           </div>
           <div className="relative">
